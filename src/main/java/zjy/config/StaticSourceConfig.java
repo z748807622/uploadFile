@@ -12,7 +12,7 @@ public class StaticSourceConfig extends WebMvcConfigurationSupport {
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
 
-		registry.addResourceHandler("/pic/**").addResourceLocations("C:/pic/");
+		//registry.addResourceHandler("/pic/**").addResourceLocations("C:/pic/");
 
 		//WebMvcConfigurer.super.addResourceHandlers(registry);
 

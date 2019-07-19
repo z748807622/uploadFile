@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="width: 100%">
+    <div th:each="pic:${picList}" th:attr="dataPic=${pic.url}" style="display: inline-block;width: 9%;padding: 2px;text-align: center">
+        <img class="pic" style="width: 100%" onclick="openPic(this)" th:src="@{${pic.url}}" />
+        <span style="color: darkgray">[[${pic.ip}]]</span>
+    </div>
+</div>
+</body>
+<script>
+    function openPic(that) {
+        window.open(that.src,"查看图片")
+    }
+</script>
+</html>
